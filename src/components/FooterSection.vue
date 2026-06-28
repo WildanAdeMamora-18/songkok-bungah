@@ -1,13 +1,29 @@
+<script setup>
+import { MapPin, Phone, Mail, Facebook, Instagram, Youtube } from 'lucide-vue-next'
+</script>
+
 <template>
   <footer class="bg-black text-white pt-16 pb-8">
     <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
       <!-- Logo -->
       <div>
-        <h2 class="text-2xl font-bold text-yellow-500 mb-3">SONGKOK BUNGAH</h2>
+        <div class="flex items-center gap-4 mb-4">
+          <img
+            src="../assets/images/logo.png"
+            alt="UD. IKBAL VIP"
+            class="w-14 h-14 object-contain"
+          />
+
+          <div>
+            <h2 class="text-2xl font-bold text-yellow-500">UD. IKBAL VIP</h2>
+
+            <p class="text-xs text-gray-400 tracking-widest uppercase">Pengrajin Songkok Premium</p>
+          </div>
+        </div>
 
         <p class="text-gray-400 leading-relaxed">
-          UMKM pengrajin songkok berkualitas dari Desa Bungah, Gresik yang mengutamakan kualitas dan
-          ketelitian dalam setiap proses produksi.
+          UMKM pengrajin songkok berkualitas dari Desa Bungah, Gresik yang mengutamakan kualitas,
+          ketelitian, dan kepercayaan pelanggan dalam setiap proses produksi.
         </p>
       </div>
 
@@ -15,25 +31,27 @@
       <div>
         <h3 class="text-lg font-semibold text-yellow-500 mb-4">Menu</h3>
 
-        <ul class="space-y-2 text-gray-300">
+        <ul class="space-y-3 text-gray-300">
           <li>
-            <RouterLink to="/"> Beranda </RouterLink>
+            <RouterLink to="/" class="hover:text-yellow-500 transition"> Beranda </RouterLink>
           </li>
 
           <li>
-            <RouterLink to="/tentang"> Tentang Kami </RouterLink>
+            <RouterLink to="/tentang" class="hover:text-yellow-500 transition">
+              Tentang Kami
+            </RouterLink>
           </li>
 
           <li>
-            <RouterLink to="/produk"> Produk </RouterLink>
+            <RouterLink to="/produk" class="hover:text-yellow-500 transition"> Produk </RouterLink>
           </li>
 
           <li>
-            <RouterLink to="/galeri"> Galeri </RouterLink>
+            <RouterLink to="/galeri" class="hover:text-yellow-500 transition"> Galeri </RouterLink>
           </li>
 
           <li>
-            <RouterLink to="/kontak"> Kontak </RouterLink>
+            <RouterLink to="/kontak" class="hover:text-yellow-500 transition"> Kontak </RouterLink>
           </li>
         </ul>
       </div>
@@ -42,12 +60,21 @@
       <div>
         <h3 class="text-lg font-semibold text-yellow-500 mb-4">Kontak Kami</h3>
 
-        <div class="space-y-3 text-gray-300">
-          <p>📍 Desa Bungah, Kec. Bungah, Kab. Gresik</p>
+        <div class="space-y-4 text-gray-300">
+          <div class="flex items-start gap-3">
+            <MapPin class="w-5 h-5 text-yellow-500 mt-1 shrink-0" />
+            <span>Desa Bungah, Kec. Bungah, Kab. Gresik</span>
+          </div>
 
-          <p>📞 0812-3456-7890</p>
+          <div class="flex items-center gap-3">
+            <Phone class="w-5 h-5 text-yellow-500 shrink-0" />
+            <span>0812-3456-7890</span>
+          </div>
 
-          <p>✉ info@songkokbungah.com</p>
+          <div class="flex items-center gap-3">
+            <Mail class="w-5 h-5 text-yellow-500 shrink-0" />
+            <span>info@songkokbungah.com</span>
+          </div>
         </div>
       </div>
 
@@ -55,14 +82,27 @@
       <div>
         <h3 class="text-lg font-semibold text-yellow-500 mb-4">Ikuti Kami</h3>
 
-        <div class="flex gap-4 text-2xl">
-          <a href="#"> 📘 </a>
+        <div class="flex gap-4">
+          <a
+            href="#"
+            class="w-11 h-11 rounded-full border border-gray-700 flex items-center justify-center hover:bg-yellow-500 hover:text-black hover:border-yellow-500 transition"
+          >
+            <Facebook class="w-5 h-5" />
+          </a>
 
-          <a href="#"> 📷 </a>
+          <a
+            href="#"
+            class="w-11 h-11 rounded-full border border-gray-700 flex items-center justify-center hover:bg-yellow-500 hover:text-black hover:border-yellow-500 transition"
+          >
+            <Instagram class="w-5 h-5" />
+          </a>
 
-          <a href="#"> 🎵 </a>
-
-          <a href="#"> ▶ </a>
+          <a
+            href="#"
+            class="w-11 h-11 rounded-full border border-gray-700 flex items-center justify-center hover:bg-yellow-500 hover:text-black hover:border-yellow-500 transition"
+          >
+            <Youtube class="w-5 h-5" />
+          </a>
         </div>
       </div>
     </div>

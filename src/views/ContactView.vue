@@ -1,4 +1,6 @@
 <script setup>
+import { MapPin, Phone, Mail, Clock3, MessageCircle } from 'lucide-vue-next'
+
 const submitForm = () => {
   alert('Pesan berhasil dikirim!')
 }
@@ -22,11 +24,21 @@ const submitForm = () => {
       <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12">
         <!-- INFORMASI -->
         <div>
-          <h2 class="text-3xl font-bold mb-8">Informasi Kontak</h2>
+          <div class="flex items-center gap-3 mb-8">
+            <Phone class="w-8 h-8 text-yellow-600" />
+
+            <h2 class="text-3xl font-bold">Informasi Kontak</h2>
+          </div>
 
           <div class="space-y-6">
-            <div class="flex gap-4 items-start">
-              <span class="text-3xl"> 📍 </span>
+            <div
+              class="flex gap-4 items-start p-5 rounded-xl border border-gray-100 hover:border-yellow-300 hover:shadow-lg transition"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-yellow-100 flex items-center justify-center shrink-0"
+              >
+                <MapPin class="w-6 h-6 text-yellow-600" />
+              </div>
 
               <div>
                 <h3 class="font-semibold">Alamat</h3>
@@ -37,8 +49,14 @@ const submitForm = () => {
               </div>
             </div>
 
-            <div class="flex gap-4 items-start">
-              <span class="text-3xl"> 📞 </span>
+            <div
+              class="flex gap-4 items-start p-5 rounded-xl border border-gray-100 hover:border-yellow-300 hover:shadow-lg transition"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-yellow-100 flex items-center justify-center shrink-0"
+              >
+                <Phone class="w-6 h-6 text-yellow-600" />
+              </div>
 
               <div>
                 <h3 class="font-semibold">Telepon / WhatsApp</h3>
@@ -47,8 +65,14 @@ const submitForm = () => {
               </div>
             </div>
 
-            <div class="flex gap-4 items-start">
-              <span class="text-3xl"> ✉ </span>
+            <div
+              class="flex gap-4 items-start p-5 rounded-xl border border-gray-100 hover:border-yellow-300 hover:shadow-lg transition"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-yellow-100 flex items-center justify-center shrink-0"
+              >
+                <Mail class="w-6 h-6 text-yellow-600" />
+              </div>
 
               <div>
                 <h3 class="font-semibold">Email</h3>
@@ -57,8 +81,14 @@ const submitForm = () => {
               </div>
             </div>
 
-            <div class="flex gap-4 items-start">
-              <span class="text-3xl"> 🕒 </span>
+            <div
+              class="flex gap-4 items-start p-5 rounded-xl border border-gray-100 hover:border-yellow-300 hover:shadow-lg transition"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-yellow-100 flex items-center justify-center shrink-0"
+              >
+                <Clock3 class="w-6 h-6 text-yellow-600" />
+              </div>
 
               <div>
                 <h3 class="font-semibold">Jam Operasional</h3>
@@ -74,15 +104,20 @@ const submitForm = () => {
           <a
             href="https://wa.me/628123456789"
             target="_blank"
-            class="inline-block mt-10 bg-yellow-500 text-black px-8 py-4 rounded-lg font-semibold hover:opacity-90"
+            class="inline-flex items-center gap-3 mt-10 bg-yellow-500 text-black px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition"
           >
+            <MessageCircle class="w-5 h-5" />
             Chat WhatsApp
           </a>
         </div>
 
         <!-- FORM -->
         <div class="bg-gray-50 p-8 rounded-2xl shadow-lg">
-          <h2 class="text-3xl font-bold mb-6">Kirim Pesan</h2>
+          <div class="flex items-center gap-3 mb-6">
+            <Mail class="w-8 h-8 text-yellow-600" />
+
+            <h2 class="text-3xl font-bold">Kirim Pesan</h2>
+          </div>
 
           <form @submit.prevent="submitForm" class="space-y-5">
             <div>
@@ -125,7 +160,11 @@ const submitForm = () => {
     <!-- GOOGLE MAPS -->
     <section class="pb-20 bg-white">
       <div class="max-w-7xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-10">Lokasi Kami</h2>
+        <div class="flex justify-center items-center gap-3 mb-10">
+          <MapPin class="w-8 h-8 text-yellow-600" />
+
+          <h2 class="text-3xl font-bold">Lokasi Kami</h2>
+        </div>
 
         <div class="rounded-2xl overflow-hidden shadow-lg">
           <iframe

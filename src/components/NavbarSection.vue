@@ -32,21 +32,21 @@ const menus = [
 </script>
 
 <template>
-  <nav class="bg-black text-white sticky top-0 z-50 shadow-lg border-b border-gray-800">
+  <nav class="bg-white text-black sticky top-0 z-50 shadow-lg border-b border-gray-800">
     <div class="max-w-7xl mx-auto px-6">
       <div class="flex justify-between items-center h-20">
         <!-- Logo -->
         <RouterLink to="/" class="flex items-center gap-3">
           <div
-            class="w-12 h-12 rounded-full border-2 border-yellow-500 flex items-center justify-center text-xl"
+            class="w-14 h-14 rounded-ful flex items-center justify-center text-xl"
           >
-            🧢
+            <img src="../assets/images/logo.png" alt="logo">
           </div>
 
           <div>
-            <h1 class="text-xl font-bold text-yellow-500">SONGKOK BUNGAH</h1>
+            <h1 class="text-2xl font-bold text-yellow-500">UD. IKBAL VIP</h1>
 
-            <p class="text-xs text-gray-400 tracking-[4px]">GRESIK</p>
+            <p class="text-xs text-b-400 tracking-[4px]">Pengrajin Songkok Premium</p>
           </div>
         </RouterLink>
 
@@ -55,7 +55,7 @@ const menus = [
           <RouterLink v-for="menu in menus" :key="menu.path" :to="menu.path" v-slot="{ isActive }">
             <div
               class="relative py-2 font-medium transition duration-300 cursor-pointer"
-              :class="isActive ? 'text-yellow-500' : 'text-white hover:text-yellow-500'"
+              :class="isActive ? 'text-yellow-500' : 'text-black hover:text-yellow-500'"
             >
               {{ menu.name }}
 
@@ -71,7 +71,7 @@ const menus = [
           <a
             href="https://wa.me/628123456789"
             target="_blank"
-            class="border border-yellow-500 text-yellow-500 px-5 py-2 rounded-lg hover:bg-yellow-500 hover:text-black transition duration-300"
+            class="bg-yellow-500 text-black px-5 py-2 rounded-lg hover:bg-white hover:border border-yellow-500 hover:text-yellow-500 transition duration-300"
           >
             WhatsApp
           </a>

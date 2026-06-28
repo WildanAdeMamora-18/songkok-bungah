@@ -1,9 +1,24 @@
+<script setup>
+import {
+  Target,
+  Eye,
+  CheckCircle,
+  Award,
+  Handshake,
+  Briefcase,
+  CalendarDays,
+  Users,
+  ShoppingBag,
+  MapPinned,
+} from 'lucide-vue-next'
+</script>
+
 <template>
   <main>
     <!-- HERO -->
     <section class="bg-black text-white py-24">
       <div class="max-w-6xl mx-auto px-6 text-center">
-        <h1 class="text-5xl font-bold">Tentang Kami</h1>
+        <h1 class="text-5xl font-bold">Tentang UD. IKBAL VIP</h1>
 
         <p class="mt-4 text-gray-300 max-w-3xl mx-auto">
           UMKM Songkok Bungah merupakan pengrajin songkok dan peci yang berkomitmen menjaga
@@ -17,7 +32,7 @@
       <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <div>
           <img
-            src="../assets/images/contoh.jpg"
+            src="../assets/images/produksi-songkok.jpg"
             alt="UMKM Songkok Bungah"
             class="rounded-2xl shadow-xl"
           />
@@ -48,7 +63,10 @@
         <div class="grid md:grid-cols-2 gap-10">
           <!-- VISI -->
           <div class="bg-white p-10 rounded-2xl shadow-lg">
-            <h3 class="text-3xl font-bold text-yellow-600 mb-5">Visi</h3>
+            <div class="flex items-center gap-3 mb-5">
+              <Eye class="w-8 h-8 text-yellow-600" />
+              <h3 class="text-3xl font-bold text-yellow-600">Visi</h3>
+            </div>
 
             <p class="text-gray-600 leading-relaxed">
               Menjadi UMKM pengrajin songkok terpercaya yang dikenal karena kualitas produk,
@@ -58,13 +76,31 @@
 
           <!-- MISI -->
           <div class="bg-white p-10 rounded-2xl shadow-lg">
-            <h3 class="text-3xl font-bold text-yellow-600 mb-5">Misi</h3>
+            <div class="flex items-center gap-3 mb-5">
+              <Target class="w-8 h-8 text-yellow-600" />
+              <h3 class="text-3xl font-bold text-yellow-600">Misi</h3>
+            </div>
 
-            <ul class="space-y-3 text-gray-600">
-              <li>✓ Menjaga kualitas produk.</li>
-              <li>✓ Memberikan pelayanan terbaik.</li>
-              <li>✓ Mendukung pelestarian budaya lokal.</li>
-              <li>✓ Mengembangkan pemasaran digital.</li>
+            <ul class="space-y-4 text-gray-600">
+              <li class="flex items-center gap-3">
+                <CheckCircle class="w-5 h-5 text-green-600" />
+                Menjaga kualitas produk.
+              </li>
+
+              <li class="flex items-center gap-3">
+                <CheckCircle class="w-5 h-5 text-green-600" />
+                Memberikan pelayanan terbaik.
+              </li>
+
+              <li class="flex items-center gap-3">
+                <CheckCircle class="w-5 h-5 text-green-600" />
+                Mendukung pelestarian budaya lokal.
+              </li>
+
+              <li class="flex items-center gap-3">
+                <CheckCircle class="w-5 h-5 text-green-600" />
+                Mengembangkan pemasaran digital.
+              </li>
             </ul>
           </div>
         </div>
@@ -78,7 +114,11 @@
 
         <div class="grid md:grid-cols-3 gap-8">
           <div class="p-8 shadow-lg rounded-xl text-center">
-            <div class="text-5xl mb-4">⭐</div>
+            <div
+              class="w-16 h-16 mx-auto mb-5 rounded-full bg-yellow-100 flex items-center justify-center"
+            >
+              <Award class="w-8 h-8 text-yellow-600" />
+            </div>
 
             <h3 class="font-bold text-xl mb-3">Kualitas</h3>
 
@@ -86,7 +126,11 @@
           </div>
 
           <div class="p-8 shadow-lg rounded-xl text-center">
-            <div class="text-5xl mb-4">🤝</div>
+            <div
+              class="w-16 h-16 mx-auto mb-5 rounded-full bg-yellow-100 flex items-center justify-center"
+            >
+              <Handshake class="w-8 h-8 text-yellow-600" />
+            </div>
 
             <h3 class="font-bold text-xl mb-3">Kepercayaan</h3>
 
@@ -94,7 +138,11 @@
           </div>
 
           <div class="p-8 shadow-lg rounded-xl text-center">
-            <div class="text-5xl mb-4">🎯</div>
+            <div
+              class="w-16 h-16 mx-auto mb-5 rounded-full bg-yellow-100 flex items-center justify-center"
+            >
+              <Briefcase class="w-8 h-8 text-yellow-600" />
+            </div>
 
             <h3 class="font-bold text-xl mb-3">Profesional</h3>
 
@@ -109,24 +157,32 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="grid md:grid-cols-4 gap-8 text-center">
           <div>
+            <CalendarDays class="w-10 h-10 text-yellow-500 mx-auto mb-3" />
+
             <h3 class="text-5xl font-bold text-yellow-500">10+</h3>
 
             <p class="mt-3">Tahun Pengalaman</p>
           </div>
 
           <div>
+            <Users class="w-10 h-10 text-yellow-500 mx-auto mb-3" />
+
             <h3 class="text-5xl font-bold text-yellow-500">500+</h3>
 
             <p class="mt-3">Pelanggan</p>
           </div>
 
           <div>
+            <ShoppingBag class="w-10 h-10 text-yellow-500 mx-auto mb-3" />
+
             <h3 class="text-5xl font-bold text-yellow-500">1000+</h3>
 
             <p class="mt-3">Produk Terjual</p>
           </div>
 
           <div>
+            <MapPinned class="w-10 h-10 text-yellow-500 mx-auto mb-3" />
+
             <h3 class="text-5xl font-bold text-yellow-500">100%</h3>
 
             <p class="mt-3">Produk Lokal</p>

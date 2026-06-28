@@ -1,37 +1,16 @@
 <script setup>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-]4
-
-
-
-
-
 import { products } from '../data/product'
-ddfd+++
-+
-/script>
+import {
+  Award,
+  HandHelping,
+  Palette,
+  Truck,
+  Scissors,
+  Package,
+  ShieldCheck,
+  Ruler,
+} from 'lucide-vue-next'
+</script>
 
 <template>
   <main>
@@ -68,14 +47,8 @@ ddfd+++
               class="border border-yellow-500 px-6 py-3 rounded-lg text-yellow-500"
             >
               Hubungi Kami
-          </div>
-
-+
-/
-
-
             </a>
-
+          </div>
         </div>
 
         <!-- Kanan -->
@@ -109,32 +82,60 @@ ddfd+++
         <h2 class="text-center text-4xl font-bold mb-14">Mengapa Memilih Kami?</h2>
 
         <div class="grid md:grid-cols-4 gap-8">
-          <div class="bg-white p-8 rounded-xl shadow text-center">
-            <div class="text-5xl mb-4">⭐</div>
+          <!-- Berkualitas -->
+          <div
+            class="bg-white p-8 rounded-xl shadow hover:-translate-y-2 hover:shadow-xl duration-300 text-center"
+          >
+            <div
+              class="w-16 h-16 mx-auto mb-5 rounded-full bg-yellow-100 flex items-center justify-center"
+            >
+              <Award class="w-8 h-8 text-yellow-600" />
+            </div>
 
             <h3 class="font-bold text-xl">Berkualitas</h3>
 
             <p class="mt-3 text-gray-600">Menggunakan bahan pilihan terbaik.</p>
           </div>
 
-          <div class="bg-white p-8 rounded-xl shadow text-center">
-            <div class="text-5xl mb-4">✋</div>
+          <!-- Handmade -->
+          <div
+            class="bg-white p-8 rounded-xl shadow hover:-translate-y-2 hover:shadow-xl duration-300 text-center"
+          >
+            <div
+              class="w-16 h-16 mx-auto mb-5 rounded-full bg-yellow-100 flex items-center justify-center"
+            >
+              <HandHelping class="w-8 h-8 text-yellow-600" />
+            </div>
 
             <h3 class="font-bold text-xl">Handmade</h3>
 
             <p class="mt-3 text-gray-600">Dikerjakan oleh pengrajin berpengalaman.</p>
           </div>
 
-          <div class="bg-white p-8 rounded-xl shadow text-center">
-            <div class="text-5xl mb-4">🎨</div>
+          <!-- Custom -->
+          <div
+            class="bg-white p-8 rounded-xl shadow hover:-translate-y-2 hover:shadow-xl duration-300 text-center"
+          >
+            <div
+              class="w-16 h-16 mx-auto mb-5 rounded-full bg-yellow-100 flex items-center justify-center"
+            >
+              <Palette class="w-8 h-8 text-yellow-600" />
+            </div>
 
             <h3 class="font-bold text-xl">Custom</h3>
 
             <p class="mt-3 text-gray-600">Menerima desain dan bordir khusus.</p>
           </div>
 
-          <div class="bg-white p-8 rounded-xl shadow text-center">
-            <div class="text-5xl mb-4">🚚</div>
+          <!-- Pengiriman -->
+          <div
+            class="bg-white p-8 rounded-xl shadow hover:-translate-y-2 hover:shadow-xl duration-300 text-center"
+          >
+            <div
+              class="w-16 h-16 mx-auto mb-5 rounded-full bg-yellow-100 flex items-center justify-center"
+            >
+              <Truck class="w-8 h-8 text-yellow-600" />
+            </div>
 
             <h3 class="font-bold text-xl">Pengiriman</h3>
 
@@ -172,49 +173,76 @@ ddfd+++
     </section>
 
     <!-- PROSES PRODUKSI -->
-    <section class="py-24 bg-gray-100">
+    <section class="py-18 bg-gray-100">
       <div class="max-w-7xl mx-auto px-6">
-        <h2 class="text-center text-4xl font-bold mb-14">Proses Produksi</h2>
+        <div class="text-center mb-16">
+          <!-- <span class="text-yellow-500 font-semibold tracking-widest"> PROSES PEMBUATAN </span> -->
 
-        <div class="grid md:grid-cols-4 gap-8 text-center">
-          <div>
+          <h2 class="text-4xl font-bold mt-3">Proses Produksi Songkok</h2>
+
+          <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+            Setiap songkok dibuat dengan proses yang teliti untuk menghasilkan produk yang nyaman,
+            rapi, dan berkualitas tinggi.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-8 relative">
+          <!-- Step 1 -->
+          <div class="relative text-center">
             <div
-              class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center text-3xl mx-auto mb-4"
+              class="w-20 h-20 mx-auto rounded-full bg-yellow-500 flex items-center justify-center shadow-lg"
             >
-              1
+              <Ruler class="w-10 h-10 text-black" />
             </div>
 
-            <h3 class="font-semibold">Pemilihan Bahan</h3>
+            <h3 class="font-bold text-xl mt-5">Pemilihan Bahan</h3>
+
+            <p class="text-gray-600 mt-3">Memilih bahan bludru, kain, dan pelengkap terbaik.</p>
           </div>
 
-          <div>
+          <!-- Step 2 -->
+          <div class="relative text-center">
             <div
-              class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center text-3xl mx-auto mb-4"
+              class="w-20 h-20 mx-auto rounded-full bg-yellow-500 flex items-center justify-center shadow-lg"
             >
-              2
+              <Scissors class="w-10 h-10 text-black" />
             </div>
 
-            <h3 class="font-semibold">Pemotongan</h3>
+            <h3 class="font-bold text-xl mt-5">Pemotongan</h3>
+
+            <p class="text-gray-600 mt-3">
+              Bahan dipotong sesuai ukuran dan pola yang telah ditentukan.
+            </p>
           </div>
 
-          <div>
+          <!-- Step 3 -->
+          <div class="relative text-center">
             <div
-              class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center text-3xl mx-auto mb-4"
+              class="w-20 h-20 mx-auto rounded-full bg-yellow-500 flex items-center justify-center shadow-lg"
             >
-              3
+              <Package class="w-10 h-10 text-black" />
             </div>
 
-            <h3 class="font-semibold">Penjahitan</h3>
+            <h3 class="font-bold text-xl mt-5">Penjahitan</h3>
+
+            <p class="text-gray-600 mt-3">
+              Proses penyatuan setiap bagian dilakukan secara rapi dan presisi.
+            </p>
           </div>
 
-          <div>
+          <!-- Step 4 -->
+          <div class="relative text-center">
             <div
-              class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center text-3xl mx-auto mb-4"
+              class="w-20 h-20 mx-auto rounded-full bg-yellow-500 flex items-center justify-center shadow-lg"
             >
-              4
+              <ShieldCheck class="w-10 h-10 text-black" />
             </div>
 
-            <h3 class="font-semibold">Finishing</h3>
+            <h3 class="font-bold text-xl mt-5">Finishing</h3>
+
+            <p class="text-gray-600 mt-3">
+              Pemeriksaan kualitas dan perapihan sebelum dikirim ke pelanggan.
+            </p>
           </div>
         </div>
       </div>
