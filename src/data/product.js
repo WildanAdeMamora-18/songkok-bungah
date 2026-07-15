@@ -46,4 +46,11 @@ export const products = [
     category: 'Merek Songkok',
     description: 'Songkok dengan motif kembang klasik yang indah.',
   },
+  {
+    id: 6,
+    name: 'Songkok At-Taqmir',
+    image: songkokAttaqmir,
+    category: 'Merek Songkok',
+    description: 'Songkok dengan motif kembang klasik yang indah.',
+  },
 ]
