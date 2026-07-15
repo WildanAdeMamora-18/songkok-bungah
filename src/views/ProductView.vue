@@ -5,7 +5,7 @@ import { products } from '../data/product.js'
 
 const selectedCategory = ref('Semua')
 
-const categories = ['Semua', 'Premium', 'Bordir', 'Custom']
+const categories = ['Semua', 'Jenis Songkok', 'Merek Songkok']
 
 const filteredProducts = computed(() => {
   if (selectedCategory.value === 'Semua') {

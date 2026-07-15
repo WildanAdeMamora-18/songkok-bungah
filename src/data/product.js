@@ -1,22 +1,49 @@
-import songkok from '../assets/images/songkok.jpg'
+import songkokAc from '../assets/images/produk/songkok-ac.JPG'
+import songkokSusun from '../assets/images/produk/songkok-susun.JPG'
+import songkokKembangKlasik from '../assets/images/produk/songkok-kembang-klasik.JPG'
+import songkokAttaqmir from '../assets/images/produk/songkok-attamir.JPG'
 
 export const products = [
   {
     id: 1,
-    name: 'Songkok Beludru Premium',
-    image: songkok,
-    description: 'Songkok berbahan beludru berkualitas tinggi.',
+    name: 'Songkok Beludru AC Premium',
+    image: songkokAc,
+    category: 'Jenis Songkok',
+    description: 'Songkok berbahan beludru dengan kualitas premium dan desain elegan.',
   },
   {
     id: 2,
-    name: 'Songkok Bordir Eksklusif',
-    image: songkok,
-    description: 'Songkok dengan bordir elegan dan rapi.',
+    name: 'Songkok Beludru Susun',
+    image: songkokSusun,
+    category: 'Jenis Songkok',
+    description: 'Songkok berbahan beludru yang nyaman dan stylish.',
   },
   {
     id: 3,
-    name: 'Songkok Custom',
-    image: songkok,
-    description: 'Melayani desain dan bordir sesuai kebutuhan.',
+    name: 'Songkok Motif Kembang Klasik',
+    image: songkokKembangKlasik,
+    category: 'Jenis Songkok',
+    description: 'Songkok dengan motif kembang klasik yang indah.',
+  },
+  {
+    id: 4,
+    name: 'Songkok At-Taqmir',
+    image: songkokAttaqmir,
+    category: 'Merek Songkok',
+    description: 'Songkok dengan motif kembang klasik yang indah.',
+  },
+  {
+    id: 5,
+    name: 'Songkok At-Taqmir',
+    image: songkokAttaqmir,
+    category: 'Merek Songkok',
+    description: 'Songkok dengan motif kembang klasik yang indah.',
+  },
+  {
+    id: 6,
+    name: 'Songkok At-Taqmir',
+    image: songkokAttaqmir,
+    category: 'Merek Songkok',
+    description: 'Songkok dengan motif kembang klasik yang indah.',
   },
 ]

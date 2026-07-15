@@ -43,13 +43,13 @@ defineProps({
           {{ product.price }}
         </span>
 
-        <a
+        <!-- <a
           href="https://wa.me/628123456789"
           target="_blank"
           class="bg-black text-white px-4 py-2 rounded-lg"
         >
           Pesan
-        </a>
+        </a> -->
       </div>
 
     </div>

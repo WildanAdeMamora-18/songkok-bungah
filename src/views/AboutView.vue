@@ -44,14 +44,21 @@ import {
           <h2 class="text-4xl font-bold mt-3 mb-6">Melestarikan Tradisi Songkok Nusantara</h2>
 
           <p class="text-gray-600 leading-relaxed mb-4">
-            UMKM Songkok Bungah berdiri sebagai usaha kerajinan lokal yang memproduksi songkok dan
-            peci berkualitas untuk masyarakat umum, pesantren, sekolah, dan berbagai instansi.
+            Songkok merupakan salah satu penutup kepala yang memiliki nilai budaya, religious, dan
+            sosial yang tinggi dan menjadi kekhasan bangsa Indonesia. Selain digunakan dalam
+            kegiatan keagamaan, songkok juga sering dikenakan pada acara resmi, kunjungan
+            kenegaraan, upacara-upacara, dan berbagai kegiatan di masyarakat. Tingginya kebutuhan
+            akan songkok menjadikan produk ini memiliki peluang usaha yang menjanjikan di dalam
+            negeri maupun di luar negeri.
           </p>
 
           <p class="text-gray-600 leading-relaxed">
-            Dengan pengalaman dan keterampilan para pengrajin, setiap produk dibuat secara teliti
-            menggunakan bahan pilihan sehingga menghasilkan produk yang nyaman, kuat, dan memiliki
-            nilai estetika tinggi.
+            Selain bertujuan memenuhi kebutuhan konsumen, usaha produksi songkok juga berperan
+            menciptakan lapangan pekerjaan, meningkatkan pendapatan, serta melestarikan kerajinan
+            lokal. Oleh karena itu, pengembangan produksi songkok perlu terus dilakukan melalui
+            peningkatan kualitas produk dalam bentuk inovasi, kreatifitas, produktifitas dengan
+            sentuhan peralatan modern. Dengan demikian usaha kerajinan songkok dapat bertahan dan
+            memberikan nilai tambah bagi pemberdayaan masyarakat.
           </p>
         </div>
       </div>
@@ -69,8 +76,7 @@ import {
             </div>
 
             <p class="text-gray-600 leading-relaxed">
-              Menjadi UMKM pengrajin songkok terpercaya yang dikenal karena kualitas produk,
-              inovasi, dan pelayanan terbaik.
+              menjadi produsen songkok yang berkualitas, nyaman, tahan, berkelanjutan dengan sentuhan modern
             </p>
           </div>
 
@@ -84,22 +90,22 @@ import {
             <ul class="space-y-4 text-gray-600">
               <li class="flex items-center gap-3">
                 <CheckCircle class="w-5 h-5 text-green-600" />
-                Menjaga kualitas produk.
+                menjaga kualitas produksi yang konsisten.
               </li>
 
               <li class="flex items-center gap-3">
                 <CheckCircle class="w-5 h-5 text-green-600" />
-                Memberikan pelayanan terbaik.
+                menjaga kenyamanan, kerapian, dan desain.
               </li>
 
               <li class="flex items-center gap-3">
                 <CheckCircle class="w-5 h-5 text-green-600" />
-                Mendukung pelestarian budaya lokal.
+                menggunakan bahan baku berkualitas.
               </li>
 
               <li class="flex items-center gap-3">
                 <CheckCircle class="w-5 h-5 text-green-600" />
-                Mengembangkan pemasaran digital.
+                memberikan pelayanan terbaik kepada konsumen.
               </li>
             </ul>
           </div>
@@ -159,7 +165,7 @@ import {
           <div>
             <CalendarDays class="w-10 h-10 text-yellow-500 mx-auto mb-3" />
 
-            <h3 class="text-5xl font-bold text-yellow-500">10+</h3>
+            <h3 class="text-5xl font-bold text-yellow-500">34+</h3>
 
             <p class="mt-3">Tahun Pengalaman</p>
           </div>
