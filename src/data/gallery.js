@@ -1,4 +1,3 @@
-import songkok from '../assets/images/produk/songkok-ac.jpg'
 import songkokAttamir from '../assets/images/produk/songkok-attamir.JPG'
 
 export const gallery = [
