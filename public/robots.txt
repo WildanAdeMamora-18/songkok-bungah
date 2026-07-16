@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://songkok-ud-ikbal-vip.vercel.app/sitemap.xml
