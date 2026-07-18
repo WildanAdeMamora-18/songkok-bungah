@@ -79,7 +79,7 @@ const submitForm = () => {
               <div>
                 <h3 class="font-semibold">Email</h3>
 
-                <p class="text-gray-600">mohmaghfur67@gmailcom</p>
+                <p class="text-gray-600">mohmaghfur67@gmail.com</p>
               </div>
             </div>
 
