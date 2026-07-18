@@ -207,7 +207,7 @@ import {
         </p>
 
         <a
-          href="https://wa.me/628123456789"
+          href="https://wa.me/6281331415732"
           target="_blank"
           class="inline-block mt-8 bg-yellow-500 text-black px-8 py-4 rounded-lg font-semibold"
         >
