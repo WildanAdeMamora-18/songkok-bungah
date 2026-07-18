@@ -42,7 +42,7 @@ import {
             </RouterLink>
 
             <a
-              href="https://wa.me/628123456789"
+              href="https://wa.me/6281331415732"
               target="_blank"
               class="border border-yellow-500 px-6 py-3 rounded-lg text-yellow-500"
             >
