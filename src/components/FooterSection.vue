@@ -68,7 +68,9 @@ import { MapPin, Phone, Mail, Facebook, Instagram, Youtube } from 'lucide-vue-ne
 
           <div class="flex items-center gap-3">
             <Phone class="w-5 h-5 text-yellow-500 shrink-0" />
-            <span>0812-3456-7890</span>
+            <span>0813-3141-5732</span>
+            <span>0877-9701-5222</span>
+            <span>0819-4964-8000</span>
           </div>
 
           <div class="flex items-center gap-3">
