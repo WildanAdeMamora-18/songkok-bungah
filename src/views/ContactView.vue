@@ -62,6 +62,7 @@ const submitForm = () => {
                 <h3 class="font-semibold">Telepon / WhatsApp</h3>
 
                 <p class="text-gray-600">0813-3141-5732</p>
+                <p class="text-gray-600">0877-9701-5222</p>
                 <p class="text-gray-600">0819-4964-8000</p>
               </div>
             </div>
